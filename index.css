@@ -17,18 +17,18 @@ html {
 .header {
     background: linear-gradient(#201b3b, #2f2a47, #2f2a47, #201b3b );
 }
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 250px;
-}
+.header-content,
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.header-content {
+    height: 250px;
+}
+.navbar {
     column-gap: 20px;
     padding: 14px;
-    align-items: center;
     width: 100%;
 }
 .logo {
@@ -43,10 +43,16 @@ html {
     display: flex;
     justify-content: space-around;
     flex: auto;
-    margin-right: 7vw;
+    margin-right: 6vw;
     font-size: 20px;
     column-gap: 10px;
     padding: 10px;
+}
+.individual-header-link:hover, 
+.contributor-image:hover {
+    animation-name: scaleup;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
 }
 .header-text {
     margin-left: 10vw;
@@ -55,26 +61,35 @@ html {
     color: white;
     margin-bottom: 30px;
     width: 60%;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 40px;
 }
-.header-subtext, .header-signup {
+.header-subtext, 
+.header-signup {
     margin-top: 20px;
 }
 .header-welcome {
     font-family: "Heartbit", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
-.header-subtext {
+.header-subtext,
+.contributor-title {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(190, 190, 190);
 }
+.contributor-title {
+    text-align: center;
+    margin-top: 5px;
+}
 .header-signup {
     padding: 5px 20px;
-    border-radius: 5%;
+    border-radius: 10px;
     background-color: rgb(73, 46, 73);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
     font-weight: 700;
     color: rgb(233, 233, 233);
+    letter-spacing: 1px;
 }
 .header-signup:hover {
     cursor: pointer;
@@ -87,6 +102,40 @@ html {
     margin-right: 8.4vw;
     margin-bottom: 30px;
     border: 8px double plum;
+    box-shadow: 0px 0px 20px rgb(204, 128, 204);
+}
+.contributors {
+    background: linear-gradient(#57316d, #8f50a1, #8f50a1, #57316d);
+    height: 470px;
+}
+.contributor-header {
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+    font-family: "Stand Rock", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+.contributor-container {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+    align-items: center;
+    column-gap: 50px;
+}
+.contributor-image {
+    height: 220px;
+    width: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+.contributor-name {
+    text-align: center;
+    color: white;
+    margin-top: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 @font-face {
     font-family: "Aquire";
@@ -96,8 +145,17 @@ html {
     font-family: "Heartbit";
     src: url(./resources/heartbit/Heartbit\ font\ by\ Christopher\ Ngalu/Heartbit-bold.otf);
 }
+@font-face {
+    font-family: "Stand Rock";
+    src: url(./resources/standrock/StandRock\ PERSONAL\ USE\ ONLY!.otf);
+}
 @keyframes highlights {
     100% {
         background-color:rgb(165, 93, 165);
+    }
+}
+@keyframes scaleup {
+    100% {
+        transform: scale(1.1);
     }
 }
