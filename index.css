@@ -1,0 +1,103 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-links a {
+    text-decoration: none;
+    color: white;
+}
+.header-links a:visited {
+    color: white;
+}
+.header {
+    background: linear-gradient(#201b3b, #2f2a47, #2f2a47, #201b3b );
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    padding: 14px;
+    align-items: center;
+    width: 100%;
+}
+.logo {
+    width: 55vw;
+    margin-left: 10vw;
+    flex: auto;
+    font-family: "Aquire", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 30px;
+}
+.header-links {
+    display: flex;
+    justify-content: space-around;
+    flex: auto;
+    margin-right: 7vw;
+    font-size: 20px;
+    column-gap: 10px;
+    padding: 10px;
+}
+.header-text {
+    margin-left: 10vw;
+    border: 8px double white;
+    padding: 20px;
+    color: white;
+    margin-bottom: 30px;
+    width: 60%;
+}
+.header-subtext, .header-signup {
+    margin-top: 20px;
+}
+.header-welcome {
+    font-family: "Heartbit", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.header-subtext {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(190, 190, 190);
+}
+.header-signup {
+    padding: 5px 20px;
+    border-radius: 5%;
+    background-color: rgb(73, 46, 73);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(233, 233, 233);
+}
+.header-signup:hover {
+    cursor: pointer;
+    animation-name: highlights;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+.header-image {
+    max-height: 80%;
+    margin-right: 8.4vw;
+    margin-bottom: 30px;
+    border: 8px double plum;
+}
+@font-face {
+    font-family: "Aquire";
+    src: url(./resources/aquire-font/AquireLight-YzE0o.otf);
+}
+@font-face {
+    font-family: "Heartbit";
+    src: url(./resources/heartbit/Heartbit\ font\ by\ Christopher\ Ngalu/Heartbit-bold.otf);
+}
+@keyframes highlights {
+    100% {
+        background-color:rgb(165, 93, 165);
+    }
+}
