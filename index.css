@@ -15,7 +15,7 @@ html {
     color: white;
 }
 .header {
-    background: linear-gradient(#201b3b, #2f2a47, #2f2a47, #201b3b );
+    background: linear-gradient(#201b3b, #2f2a47, #2f2a47, #201b3b);
 }
 .header-content,
 .navbar {
@@ -106,7 +106,7 @@ html {
 }
 .contributors {
     background: linear-gradient(#57316d, #8f50a1, #8f50a1, #57316d);
-    height: 470px;
+    height: 475px;
 }
 .contributor-header {
     text-align: center;
@@ -137,6 +137,29 @@ html {
     margin-top: 1em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.quote-container {
+    height: 325px;
+    background: linear-gradient(#3e3572, #4d4575, #4d4575, #3e3572);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.testimonial-text {
+    color:rgb(210, 210, 210);
+    font-size: 24px;
+}
+.testimonial-name {
+    align-self: flex-end;
+    font-size: 30px;
+    color: white;
+    font-family: "Hughs", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 @font-face {
     font-family: "Aquire";
     src: url(./resources/aquire-font/AquireLight-YzE0o.otf);
@@ -148,6 +171,10 @@ html {
 @font-face {
     font-family: "Stand Rock";
     src: url(./resources/standrock/StandRock\ PERSONAL\ USE\ ONLY!.otf);
+}
+@font-face {
+    font-family: "Hughs";
+    src: url(./resources/Hughs/Hughs.otf);
 }
 @keyframes highlights {
     100% {
