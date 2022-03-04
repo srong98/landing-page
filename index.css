@@ -14,7 +14,7 @@ html {
 .navbar a:visited {
     color: white;
 }
-.header {
+.header{
     background: linear-gradient(#201b3b, #2f2a47, #2f2a47, #201b3b);
 }
 .header-content,
@@ -43,7 +43,7 @@ html {
     display: flex;
     justify-content: space-around;
     flex: auto;
-    margin-right: 6vw;
+    margin-right: 5vw;
     font-size: 20px;
     column-gap: 10px;
     padding: 10px;
@@ -191,7 +191,8 @@ html {
     row-gap: 10px;
 }
 .signup-header,
-.signup-subtext {
+.signup-subtext,
+.footer {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .signup-header {
@@ -200,6 +201,15 @@ html {
 .signup-subtext {
     color:rgb(210, 210, 210);
     font-size: 14px;
+}
+.footer {
+    height: 50px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#2f2a47, #201b3b);
 }
 @font-face {
     font-family: "Aquire";
